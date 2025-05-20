@@ -2,8 +2,6 @@
 
 import React from 'react'
 import Image from 'next/image'
-import { useMeasure } from 'react-use'
-import { cn } from '@/lib/utils'
 
 const reviews = [
     {

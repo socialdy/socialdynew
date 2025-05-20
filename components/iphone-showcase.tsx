@@ -23,7 +23,6 @@ const iphoneConfig = [
 ];
 
 export function IphoneShowcase() {
-  const [isMobile, setIsMobile] = useState(false);
   const [phoneWidth, setPhoneWidth] = useState(420);
   const [gap, setGap] = useState(40);
 
@@ -32,7 +31,6 @@ export function IphoneShowcase() {
   useEffect(() => {
     const handleResize = () => {
       const mobile = window.innerWidth < 768;
-      setIsMobile(mobile);
       setPhoneWidth(mobile ? 320 : 420);
       setGap(mobile ? 16 : 40);
     };
