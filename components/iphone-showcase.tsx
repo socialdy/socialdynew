@@ -1,8 +1,7 @@
 'use client'
 
 import Iphone15Pro from "./iphone-15-pro"
-import { motion } from "framer-motion"
-import { useRef, useEffect, useState } from "react"
+import { useEffect, useState } from "react"
 
 const youtubeShortIds = [
   'pfuHS-7GYKo',    // 1 Pongau, Salzburg

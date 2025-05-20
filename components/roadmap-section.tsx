@@ -130,7 +130,7 @@ export const RoadmapSection = () => {
 
                     {/* Steps - Mobile Layout */}
                     <div className="relative space-y-12 pt-2">
-                        {steps.map((step, index) => (
+                        {steps.map((step, _) => (
                             <motion.div
                                 key={step.id}
                                 initial={{ opacity: 0, x: -20 }}

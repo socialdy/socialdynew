@@ -1,8 +1,9 @@
 'use client'
 
 import React from 'react'
-import { motion } from 'framer-motion'
 import Image from 'next/image'
+import { useMeasure } from 'react-use'
+import { cn } from '@/lib/utils'
 
 const reviews = [
     {

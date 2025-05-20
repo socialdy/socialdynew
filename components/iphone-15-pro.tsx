@@ -1,10 +1,8 @@
 import { SVGProps, useRef, useState, useEffect } from "react";
-import { cn } from "../lib/utils"; // <-- Pfad relativ zu sd-reels/components
 
 export interface Iphone15ProProps extends SVGProps<SVGSVGElement> {
   width?: number;
   height?: number;
-  src?: string;
   videoSrc?: string;
   lazyLoadMargin?: string; // Optional margin for IntersectionObserver
 }
@@ -12,7 +10,6 @@ export interface Iphone15ProProps extends SVGProps<SVGSVGElement> {
 export default function Iphone15Pro({
   width = 433,
   height = 882,
-  src,
   videoSrc,
   lazyLoadMargin = "200px", // Load when 200px away from viewport
   ...props
